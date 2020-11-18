@@ -1,0 +1,62 @@
+object FmxLineAngleDemoMainForm: TFmxLineAngleDemoMainForm
+  Left = 0
+  Top = 0
+  Caption = 'FMX Line Angle Demo'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object HelpLabel: TLabel
+    AutoSize = True
+    Position.X = 16.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 237.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Click at vector intersection'
+    TabOrder = 0
+  end
+  object MouseXYLabel: TLabel
+    Position.X = 108.000000000000000000
+    Position.Y = 36.000000000000000000
+    Size.Width = 85.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'MouseXYLabel'
+    TabOrder = 1
+  end
+  object DrawPanel: TPanel
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 625.000000000000000000
+    Size.Height = 409.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    OnMouseMove = DrawPanelMouseMove
+    OnMouseUp = DrawPanelMouseUp
+    OnMouseLeave = DrawPanelMouseLeave
+    OnPaint = DrawPanelPaint
+  end
+  object AngleLabel: TLabel
+    Position.X = 204.000000000000000000
+    Position.Y = 36.000000000000000000
+    Size.Width = 429.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'AngleLabel'
+    TabOrder = 3
+  end
+  object MousePosLabel: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 36.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Mouse position:'
+    TabOrder = 4
+  end
+end
